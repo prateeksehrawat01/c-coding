@@ -1,0 +1,27 @@
+/* https://www.hackerrank.com/challenges/functions-in-c/problem */
+#include <stdio.h>
+/*
+dd `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max_of_four(int e,int f,int g,int h);
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+int max_of_four(int e,int f,int g,int h){
+    int max=e;
+    if(f>e){
+        max=f;
+    }
+    if(g>max){
+        max=g;
+    }
+    if(h>max){
+        max=h;
+    }
+    return max;
+}
